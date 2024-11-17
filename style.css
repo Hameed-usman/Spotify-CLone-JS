@@ -1,0 +1,260 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: sans-serif;
+    color: aliceblue;
+}
+
+.left {
+    height: 100vh;
+    width: 35vw;
+    background-color: black;
+    display: flex;
+    flex-direction: column;
+    position: relative;
+}
+
+.first-sec-spotify-home-svg {
+    position: sticky;
+    top: 0;
+    background-color: black;
+    z-index: 10;
+}
+
+#logoSvg {
+    height: 32px;
+    width: 32px;
+    margin: 17px 24px;
+}
+
+#homeSvg {
+    height: 24px;
+    width: 24px;
+    float: right;
+    margin: 22px 24px;
+}
+
+.librarySec {
+    flex: 1;
+    /* overflow-y: auto; */
+}
+
+.libSvgBtn-sec01 {
+    display: flex;
+    flex-direction: column;
+    padding: 10px;
+    background-color: #121212;
+    z-index: 2;
+}
+
+
+.libSvgBtn-sec01 {
+    display: flex;
+    flex-direction: column;
+    padding: 10px;
+    background-color: #121212;
+    z-index: 2;
+    height: 300px; /* Set a fixed height to create a scrollable area */
+    overflow-y: auto; /* Enable vertical scrolling */
+    scrollbar-width: thin; /* Custom scrollbar for Firefox */
+    scrollbar-color: #888 #121212; /* Scrollbar thumb and track color */
+}
+
+/* Optional: Style the scrollbar for WebKit browsers (Chrome, Edge, Safari) */
+.libSvgBtn-sec01::-webkit-scrollbar {
+    width: 8px; /* Width of the scrollbar */
+}
+
+.libSvgBtn-sec01::-webkit-scrollbar-thumb {
+    background-color: #888; /* Color of the scrollbar thumb */
+    border-radius: 10px; /* Rounded corners for the scrollbar thumb */
+}
+
+.libSvgBtn-sec01::-webkit-scrollbar-track {
+    background-color: #121212; /* Color of the scrollbar track */
+}
+
+
+
+.libSvgBtn-content {
+    position: sticky;
+    display: flex; /* Align items horizontally */
+    align-items: center; /* Center vertically */
+    justify-content: space-between; /* Space between items */
+    background-color: #121212;
+    padding: 10px; /* Add some spacing */
+    border-radius: 5px; /* Optional: Rounded corners */
+    margin-bottom: 15px; /* Add spacing below this section */
+}
+
+#libSvg {
+    height: 24px;
+    width: 24px;
+}
+
+#h3-libSvg {
+    font-size: 18px;
+    font-weight: bold;
+    color: #fff;
+    margin: 0; /* Remove default margins */
+}
+
+#h4-libSvg {
+    font-size: 24px;
+    font-weight: lighter;
+    color: #fff;
+    margin: 0; /* Remove default margins */
+    margin-left: auto; /* Push to the right */
+}
+.inside-1st-lib, .inside-2nd-lib {
+    width: 390px; /* Adjusted width */
+    height: 160px; /* Adjusted height */
+    background-color: #1F1F1F;
+    border-radius: 5%;
+    margin: 10px 0; /* Add spacing between sections */
+    overflow-y: auto; /* Enable vertical scrolling within these divs */
+    padding: 10px; /* Add some inner spacing */
+    scrollbar-width: thin; /* Optional: Custom scrollbar style for Firefox */
+    scrollbar-color: #888 #1F1F1F; /* Optional: Thumb and track colors */
+}
+
+.inner-content {
+    background-color: #333;
+    color: #fff;
+    margin-bottom: 10px; /* Add spacing between items */
+    padding: 10px;
+    border-radius: 5px; /* Optional: Add rounded corners */
+    text-align: center;
+}
+
+/* Optional: Style the scrollbar for Webkit browsers (Chrome, Edge, Safari) */
+.inside-1st-lib::-webkit-scrollbar, 
+.inside-2nd-lib::-webkit-scrollbar {
+    width: 8px; /* Width of the scrollbar */
+}
+
+.inside-1st-lib::-webkit-scrollbar-thumb, 
+.inside-2nd-lib::-webkit-scrollbar-thumb {
+    background-color: #888; /* Scrollbar thumb color */
+    border-radius: 10px; /* Rounded corners */
+}
+
+.inside-1st-lib::-webkit-scrollbar-track, 
+.inside-2nd-lib::-webkit-scrollbar-track {
+    background-color: #1F1F1F; /* Scrollbar track color */
+}
+
+
+.playlist-container {
+    text-align: center;
+  }
+  
+  h1 {
+    font-size: 1.5rem;
+    margin-bottom: 0.5rem;
+  }
+  
+  p {
+    font-size: 1rem;
+    color: #b3b3b3; /* Lighter text color for the subtext */
+    margin-bottom: 1rem;
+  }
+  
+  .create-playlist-btn {
+    background-color: #ffffff;
+    color: #000000;
+    border: none;
+    border-radius: 25px;
+    padding: 0.5rem 1.5rem;
+    font-size: 1rem;
+    cursor: pointer;
+    transition: background-color 0.3s;
+  }
+  
+  .create-playlist-btn:hover {
+    background-color: #f0f0f0; /* Slightly lighter on hover */
+  }
+
+
+  .podcast-container {
+    text-align: center;
+  }
+  
+  h1 {
+    font-size: 1.5rem;
+    margin-bottom: 0.5rem;
+  }
+  
+  p {
+    font-size: 1rem;
+    color: #b3b3b3; /* Lighter text color for the subtext */
+    margin-bottom: 1rem;
+  }
+  
+  .browse-podcasts-btn {
+    background-color: #ffffff;
+    color: #000000;
+    border: none;
+    border-radius: 25px;
+    padding: 0.5rem 1.5rem;
+    font-size: 1rem;
+    cursor: pointer;
+    transition: background-color 0.3s;
+  }
+  
+  .browse-podcasts-btn:hover {
+    background-color: #f0f0f0; /* Slightly lighter on hover */
+  }
+    
+
+.footer {
+    padding: 60px;
+    background-color: #181818;
+    text-align: center;
+    color: #ccc;
+    font-size: 14px;
+    position: sticky;
+    bottom: 0;
+    z-index: 10;
+}
+
+.footer-links a {
+    color: #ccc;
+    text-decoration: none;
+    margin: 0 10px;
+    font-size: 14px;
+}
+
+.footer-links a:hover {
+    color: #fff;
+}
+
+.footer-bottom {
+    margin-top: 15px;
+}
+
+.footer-cookie {
+    color: #fff;
+    font-weight: bold;
+    text-decoration: none;
+    display: block;
+    margin-bottom: 10px;
+}
+
+.language-btn {
+    display: inline-flex;
+    align-items: center;
+    background-color: #333;
+    border: none;
+    padding: 8px 15px;
+    color: #fff;
+    font-size: 14px;
+    border-radius: 20px;
+    cursor: pointer;
+}
+
+.language-btn .language-icon {
+    margin-right: 8px;
+    font-size: 18px;
+}
